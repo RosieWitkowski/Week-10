@@ -1,10 +1,11 @@
-import math as maths
+import random
 
 print("Hello, world!")
 print("Change 1.")
 
-x = maths.random(1, 50)
-guess = int("Guess: ")
+
+x = random.randint(1, 50)
+guess = int(input("Guess: "))
 
 if x == guess:
     print("Win! ヽ(°‿ °*ヽ)ヽ۹ ⌤_⌤ ۹")
