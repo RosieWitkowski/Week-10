@@ -4,10 +4,21 @@ print("Hello, world!")
 print("Change 1.")
 
 
-x = random.randint(1, 50)
-guess = int(input("Guess: "))
+play = True
+x = random.randint(1, 5)
 
-if x == guess:
-    print("Win! ヽ(°‿ °*ヽ)ヽ۹ ⌤_⌤ ۹")
-else:
-    print("Lose. ಠ⌣ಠ") 
+while play:
+    guess = int(input("Guess: "))
+
+    if x == guess:
+        print("Win! ヽ(°‿ °*ヽ)ヽ۹ ⌤_⌤ ۹")
+    else:
+        print("Lose. ಠ⌣ಠ") 
+
+    options = ['y', 'n']
+    choice = 'A'
+    while choice not in options:
+        choice = input("Continue? Y/N ").lower()[:1]
+    
+    if choice == 'n':
+        play = False
