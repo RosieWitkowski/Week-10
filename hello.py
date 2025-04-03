@@ -7,6 +7,6 @@ x = maths.random(1, 50)
 guess = int("Guess: ")
 
 if x == guess:
-    print("Win!")
+    print("Win! ヽ(°‿ °*ヽ)ヽ۹ ⌤_⌤ ۹")
 else:
-    print("Lose.") 
+    print("Lose. ಠ⌣ಠ") 
