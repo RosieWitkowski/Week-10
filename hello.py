@@ -5,7 +5,7 @@ print("Change 1.")
 
 
 play = True
-x = random.randint(1, 5)
+x = random.randint(1, 25)
 
 while play:
     guess = int(input("Guess: "))
@@ -14,6 +14,10 @@ while play:
         print("Win! ヽ(°‿ °*ヽ)ヽ۹ ⌤_⌤ ۹")
     else:
         print("Lose. ಠ⌣ಠ") 
+        if guess > x:
+            print("Too big.")
+        else:
+            print("Too small.")
 
     options = ['y', 'n']
     choice = 'A'
