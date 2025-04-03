@@ -4,8 +4,9 @@ print("Hello, world!")
 print("Change 1.")
 
 x = maths.random(1, 50)
+guess = int("Guess: ")
 
-if x > 25:
-    print("Big!")
+if x == guess:
+    print("Win!")
 else:
-    print("Small.") 
+    print("Lose.") 
